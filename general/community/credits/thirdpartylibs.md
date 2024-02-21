@@ -105,8 +105,8 @@ Compiled C program to convert TeX into GIFs
 
 The general H5P library.
 
-- **Location**: h5p/h5plib/v124/joubel/core
-- **Version**: moodle-1.23
+- **Location**: h5p/h5plib/v126/joubel/core
+- **Version**: 1.26
 - **License**:  GPL 3.0+
 - **URL**: [https://github.com/h5p/h5p-php-library/](https://github.com/h5p/h5p-php-library/)
 - **Copyright holders**:
@@ -116,7 +116,7 @@ The general H5P library.
 
 A general library that is supposed to be used in most PHP implementations of H5P.
 
-- **Location**: h5p/h5plib/v124/joubel/editor
+- **Location**: h5p/h5plib/v126/joubel/editor
 - **Version**: moodle-1.23
 - **License**:  GPL 3.0+
 - **URL**: [https://github.com/h5p/h5p-editor-php-library/](https://github.com/h5p/h5p-editor-php-library/)
@@ -128,7 +128,7 @@ A general library that is supposed to be used in most PHP implementations of H5P
 Database abstraction library for MySQL, PostgreSQL, MSSQL, Oracle, Interbase, Foxpro, Access, ADO, Sybase, DB2 and ODBC.
 
 - **Location**: lib/adodb
-- **Version**: 5.22.5
+- **Version**: 5.22.7
 - **License**:  BSD/LGPL 3-Clause/2.1+
 - **URL**: [https://github.com/ADOdb/ADOdb](https://github.com/ADOdb/ADOdb)
 - **Copyright holders**:
@@ -192,6 +192,17 @@ A kickass library used to created Poppers in web applications.
 - **Copyright holders**:
   - 2016 Federico Zivolo and contributors
 
+### Popper.js
+
+A kickass library used to created Poppers in web applications.
+
+- **Location**: lib/amd/src/popper2.js
+- **Version**: v2.11.8
+- **License**:  MIT
+- **URL**: [https://github.com/floating-ui/floating-ui](https://github.com/floating-ui/floating-ui)
+- **Copyright holders**:
+  - 2016 Federico Zivolo and contributors
+
 ### Truncate.js
 
 Dead simple HTML-safe truncation via the DOM. It truncates HTML code, and has several options such as length, finishBlock and noBreak.
@@ -200,6 +211,15 @@ Dead simple HTML-safe truncation via the DOM. It truncates HTML code, and has se
 - **Version**: 0.0.1 (with Moodle customisations)
 - **License**:  MIT
 - **URL**: [https://github.com/pathable/truncate](https://github.com/pathable/truncate)
+
+### AWS SDK for PHP
+
+The AWS SDK for PHP library
+
+- **Location**: lib/aws-sdk
+- **Version**: 3.277.11
+- **License**:  Apache 2.0
+- **URL**: [https://github.com/aws/aws-sdk-php](https://github.com/aws/aws-sdk-php)
 
 ### axe-core
 
@@ -410,6 +430,17 @@ Filters HTML.
 - **License**:  LGPL 2.1+
 - **URL**: [https://github.com/ezyang/htmlpurifier](https://github.com/ezyang/htmlpurifier)
 
+### JMESPath
+
+The JMESPath library
+
+- **Location**: lib/jmespath
+- **Version**: 2.6.1
+- **License**:  MIT
+- **URL**: [https://github.com/jmespath/jmespath.php](https://github.com/jmespath/jmespath.php)
+- **Copyright holders**:
+  - 2014 Michael Dowling, https://github.com/mtdowling
+
 ### jQuery
 
 jQuery is a fast, small, and feature-rich JavaScript library widely used on moodle.
@@ -431,6 +462,13 @@ jQuery UI is a set of user interface interactions, effects, widgets, and themes 
 - **URL**: [https://github.com/jquery/jquery-ui](https://github.com/jquery/jquery-ui)
 - **Copyright holders**:
   - 2016 The jQuery Foundation and other contributors
+
+### Serializable Closure
+
+- **Location**: lib/laravel/serializable-closure
+- **Version**: 1.3.2
+- **License**:  MIT
+- **URL**: [https://github.com/laravel/serializable-closure](https://github.com/laravel/serializable-closure)
 
 ### LTI 1.3 Tool Library
 
@@ -494,7 +532,7 @@ PHP API for reading MaxMind DB files.
 CSS & JavaScript minifier, in PHP
 
 - **Location**: lib/minify/matthiasmullie-minify
-- **Version**: 1.3.70 (with Moodle customisations)
+- **Version**: 1.3.71 (with Moodle customisations)
 - **License**:  MIT
 - **URL**: [https://github.com/matthiasmullie/minify](https://github.com/matthiasmullie/minify)
 
@@ -594,6 +632,20 @@ A Parser for CSS Files written in PHP.
 - **URL**: [https://github.com/sabberworm/PHP-CSS-Parser](https://github.com/sabberworm/PHP-CSS-Parser)
 - **Copyright holders**:
   - 2011 Raphael Schweikert, http://sabberworm.com/
+
+### PHP DI Invoker
+
+- **Location**: lib/php-di/invoker
+- **Version**: 2.3.4
+- **License**:  MIT
+- **URL**: [https://github.com/php-di/invoker](https://github.com/php-di/invoker)
+
+### PHP Dependency Injector
+
+- **Location**: lib/php-di/php-di
+- **Version**: 7.0.6
+- **License**:  MIT
+- **URL**: [https://github.com/PHP-DI/PHP-DI](https://github.com/PHP-DI/PHP-DI)
 
 ### php-enum
 
@@ -696,6 +748,15 @@ Polyfill URL and URLSearchParams to match last WHATWG specifications.
 - **License**:  MIT
 - **URL**: [https://github.com/lifaon74/url-polyfill](https://github.com/lifaon74/url-polyfill)
 
+### container
+
+Common Container Interface (PHP FIG PSR-11).
+
+- **Location**: lib/psr/container
+- **Version**: 2.0.2
+- **License**:  MIT
+- **URL**: [https://github.com/php-fig/container](https://github.com/php-fig/container)
+
 ### event-dispatcher
 
 Provides interfaces that descirbe an event dispatching mechanism.
@@ -766,7 +827,7 @@ RTLCSS is a framework for converting Left-To-Right (LTR) Cascading Style Sheets(
 scssphp is a compiler for SCSS written in PHP.
 
 - **Location**: lib/scssphp
-- **Version**: 1.11.0
+- **Version**: 1.12.1
 - **License**:  MIT
 - **URL**: [https://github.com/scssphp/scssphp/](https://github.com/scssphp/scssphp/)
 - **Copyright holders**:
@@ -795,11 +856,12 @@ A generic function and convention to trigger deprecation notices
 Class to generate PDF files
 
 - **Location**: lib/tcpdf
-- **Version**: 6.6.2 (with Moodle customisations)
-- **License**:  LGPL 3.0-only
+- **Version**: 6.6.5 (with Moodle customisations)
+- **License**:  LGPL 3.0-or-later
 - **URL**: [https://github.com/tecnickcom/TCPDF](https://github.com/tecnickcom/TCPDF)
 - **Copyright holders**:
   - Olivier PLATHEY
+  - Nicola Asuni
 
 ### validateUrlSyntax
 
