@@ -22,6 +22,7 @@ Main advantages:
 - DOM inspector.
 - Network monitor.
 - Emulation options.
+- Easier access to the console to override settings via the browser object.
 
 Disadvantages:
 
@@ -96,11 +97,26 @@ These instructions have only been tested in Linux. If you are using a different 
 
 Using a browser, you'll realize it's not possible to handle deep links, for example if you're trying to log in using SSO.
 
-To work around that, you can simulate a deep link being pressed running the following code in the console:
+To work around that, you can simulate a deep link being pressed running the following code in the console.
 
 ```js
 handleOpenURL('moodlemobile://token=...');
 ```
+
+The complete deep link for SSO can be extracted from the Moodle LMS window where you completed the login by inspecting all the network requests to find the redirection to it.
+
+## Changing app settings
+
+You can run the following code to override any configuration value that was initially set in moodle.config.json, please notice you need to refresh the app for the changes to apply.
+
+Examples:
+
+```js
+browser.setDevelopmentSetting('Config', JSON.stringify({privacypolicy: 'https://mycustompolicy.com'}))  // To change the default privacy policy link.
+browser.setDevelopmentSetting('GroupWSRequests', 0) // To prevent the app from grouping WS request to easily inspect.
+```
+
+The browser object also provide these functions to check and reset to original values: clearDevelopmentSetting, getDevelopmentSetting, hasDevelopmentSetting.
 
 ## Using the hosted versions of the app
 
