@@ -14,7 +14,7 @@ This page summarises what a Moodle LMS (core or plugin) developer needs to know 
 - Works offline.
 - Supports [LMS plugins](../../app/development/plugins-development-guide/index.md), if the plugin author made them compatible.
 - Supports multiple sites.
-- Supports Bootstrap classes.
+- Supports Bootstrap classes in user generated content.
 
 See the [Platform Support](../../app/overview.md#platform-support) section of the Moodle App Overview for up-to-date minimum requirements.
 
