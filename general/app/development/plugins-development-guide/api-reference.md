@@ -93,12 +93,13 @@ Adds a new item to the main menu. Main Menu handlers are always displayed in the
 
 | Name                | Default  | Description |
 |---------------------|----------|-------------|
-| `displaydata`       | Required | An associative array with configuration options for the main menu item. |
-| `displaydata.title` | Required | Language string identifier to use in the main menu item. See the [localisation](./index.md#localisation) documentation to learn more. |
-| `displaydata.icon`  | Required | The icon to use in the main menu item. See the [ion-icon](#ion-icon) documentation for available values. |
+| `displaydata`       | -        | An associative array with configuration options for the main menu item. Required unless `displayinline` is set to `yes`. |
+| `displaydata.title` | -        | Language string identifier to use in the main menu item. See the [localisation](./index.md#localisation) documentation to learn more. Required unless `displayinline` is set to `yes`. |
+| `displaydata.icon`  | -        | The icon to use in the main menu item. See the [ion-icon](#ion-icon) documentation for available values. Required unless `displayinline` is set to `yes`. |
 | `displaydata.class` | -        | A CSS class to add in the main menu item. |
 | `priority`          | `0`      | Priority of the handler, higher priority items are displayed first. |
 | `ptrenabled`        | `true`   | Whether to enable the PTR (pull-to-refresh) gesture in the page. |
+| `displayinline`     | `no`     | If set to `yes`, the plugin HTML content will be displayed inline in the More menu instead of displaying an option to open a new page. <br /> <br /> Only available in 5.2+. |
 
 ### CoreMainMenuHomeDelegate {/* #coremainmenuhomedelegate */}
 
@@ -240,14 +241,15 @@ Add new option in the user profile page.
 
 | Name                | Default      | Description |
 |---------------------|--------------|-------------|
-| `displaydata`       | Required     | An associative array with configuration options for the option. |
-| `displaydata.title` | Required     | Language string identifier to use in the option. See the [localisation](./index.md#localisation) documentation to learn more. |
-| `displaydata.icon`  | Required     | The icon to use in the option. See the [ion-icon](#ion-icon) documentation for available values. |
+| `displaydata`       | -            | An associative array with configuration options for the option. Required unless `displayinline` is set to `yes`. |
+| `displaydata.title` | -            | Language string identifier to use in the option. See the [localisation](./index.md#localisation) documentation to learn more. Required unless `displayinline` is set to `yes`. |
+| `displaydata.icon`  | -            | The icon to use in the option. See the [ion-icon](#ion-icon) documentation for available values. Required unless `displayinline` is set to `yes`. |
 | `displaydata.class` | -            | A CSS class to add in the option. |
 | `type`              | `'listitem'` | Visual representation of the option, accepted values are `listitem` and `button`. <br /> <br /> Before 4.4, the accepted values were `newpage` and `communication` (`newpage` was the default). |
 | `priority`          | `0`          | Priority of the handler, higher priority options are displayed first. |
 | `ptrenabled`        | `true`       | Whether to enable the PTR (pull-to-refresh) gesture in the page. |
 | `displayinusermenu` | -            | Whether to display the option in the user menu (the menu displayed when the user clicks his own avatar at the top-right or top-left). Accepted values are: <ul><li>`no`: don't display the option in user menu.</li><li>`yes`: display the option in user menu. It will also be displayed in user profiles (like course participants) depending on the restrictions.</li><li>`only`: display the option only in user menu and never in user profiles.</li></ul>If not set, the option will be displayed in the user menu depending on the restricted courses and users. <br /> <br /> Only available in 5.1+. |
+| `displayinline`     | `no`            | If set to `yes`, the plugin HTML content will be displayed inline in the user menu or the user profile, instead of displaying an option to open a new page. <br /> <br /> Only available in 5.2+. |
 
 ### CoreCourseFormatDelegate {/* #corecourseformatdelegate */}
 
